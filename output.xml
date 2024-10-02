@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-01T21:14:36.744990" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste Pesquisa Smartphone" source="C:\Users\bnutec.ANIMAEDU\Desktop\testes gestao e qualidade\teste_pesquisa_smartphone.robot">
+<test id="s1-t1" name="Pesquisa de Produto na amazon" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-01T21:14:37.196701" level="INFO">Opening browser 'edge' to base url 'https://www.amazon.com.br'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-01T21:14:37.196701" elapsed="8.860815"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-01T21:14:46.098489" level="INFO">Typing text 'smartphone' into text field 'id=twotabsearchtextbox'.</msg>
+<arg>id=twotabsearchtextbox</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-01T21:14:46.097490" elapsed="0.805500"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-01T21:14:46.903989" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-01T21:14:46.903989" elapsed="3.698594"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-01T21:14:50.690529" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=129.0.2792.65)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E321CEC5+12997]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E349BCA4+1897908]
+	(No symbol) [0x00007FF7E2FCF1CC]
+	(No symbol) [0x00007FF7E2FAAB09]
+	(No symbol) [0x00007FF7E303E83B]
+	(No symbol) [0x00007FF7E30521DA]
+	(No symbol) [0x00007FF7E3037BB3]
+	(No symbol) [0x00007FF7E300B5AC]
+	(No symbol) [0x00007FF7E300AA8D]
+	(No symbol) [0x00007FF7E300B171]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E33C9DD4+1038052]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E31408BF+56655]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E3133063+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E33C8B5D+1033325]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B9731+327857]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B5BB4+312628]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B5CE9+312937]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31AC25C+273372]
+	BaseThreadInitThunk [0x00007FFE704B7374+20]
+	DummyExport [0x00007FFE4FDD17AA+58794]
+	RtlUserThreadStart [0x00007FFE724BCC91+33]
+</msg>
+<msg time="2024-10-01T21:14:50.701523" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=129.0.2792.65)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E321CEC5+12997]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E349BCA4+1897908]
+	(No symbol) [0x00007FF7E2FCF1CC]
+	(No symbol) [0x00007FF7E2FAAB09]
+	(No symbol) [0x00007FF7E303E83B]
+	(No symbol) [0x00007FF7E30521DA]
+	(No symbol) [0x00007FF7E3037BB3]
+	(No symbol) [0x00007FF7E300B5AC]
+	(No symbol) [0x00007FF7E300AA8D]
+	(No symbol) [0x00007FF7E300B171]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E33C9DD4+1038052]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E31408BF+56655]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E3133063+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E33C8B5D+1033325]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B9731+327857]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B5BB4+312628]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B5CE9+312937]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31AC25C+273372]
+	BaseThreadInitThunk [0x00007FFE704B7374+20]
+	DummyExport [0x00007FFE4FDD17AA+58794]
+	RtlUserThreadStart [0x00007FFE724BCC91+33]
+</msg>
+<arg>${PRODUTO}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-10-01T21:14:50.629567" elapsed="0.080950">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=129.0.2792.65)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E321CEC5+12997]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E349BCA4+1897908]
+	(No symbol) [0x00007FF7E2FCF1CC]
+	(No symbol) [0x00007FF7E2FAAB09]
+	(No symbol) [0x00007FF7E303E83B]
+	(No symbol) [0x00007FF7E30521DA]
+	(No symbol) [0x00007FF7E3037BB3]
+	(No symbol) [0x00007FF7E300B5AC]
+	(No symbol) [0x00007FF7E300AA8D]
+	(No symbol) [0x00007FF7E300B171]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E33C9DD4+1038052]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E31408BF+56655]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E3133063+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E33C8B5D+1033325]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B9731+327857]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B5BB4+312628]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B5CE9+312937]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31AC25C+273372]
+	BaseThreadInitThunk [0x00007FFE704B7374+20]
+	DummyExport [0x00007FFE4FDD17AA+58794]
+	RtlUserThreadStart [0x00007FFE724BCC91+33]
+</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-10-01T21:14:50.711516" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-01T21:14:37.195700" elapsed="13.516815">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=129.0.2792.65)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E321CEC5+12997]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E349BCA4+1897908]
+	(No symbol) [0x00007FF7E2FCF1CC]
+	(No symbol) [0x00007FF7E2FAAB09]
+	(No symbol) [0x00007FF7E303E83B]
+	(No symbol) [0x00007FF7E30521DA]
+	(No symbol) [0x00007FF7E3037BB3]
+	(No symbol) [0x00007FF7E300B5AC]
+	(No symbol) [0x00007FF7E300AA8D]
+	(No symbol) [0x00007FF7E300B171]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E33C9DD4+1038052]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E31408BF+56655]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E3133063+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E33C8B5D+1033325]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B9731+327857]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B5BB4+312628]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B5CE9+312937]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31AC25C+273372]
+	BaseThreadInitThunk [0x00007FFE704B7374+20]
+	DummyExport [0x00007FFE4FDD17AA+58794]
+	RtlUserThreadStart [0x00007FFE724BCC91+33]
+</status>
+</test>
+<status status="FAIL" start="2024-10-01T21:14:36.748990" elapsed="13.971520"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Teste Pesquisa Smartphone">Teste Pesquisa Smartphone</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-01T21:14:50.690529" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=129.0.2792.65)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E321CEC5+12997]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E349BCA4+1897908]
+	(No symbol) [0x00007FF7E2FCF1CC]
+	(No symbol) [0x00007FF7E2FAAB09]
+	(No symbol) [0x00007FF7E303E83B]
+	(No symbol) [0x00007FF7E30521DA]
+	(No symbol) [0x00007FF7E3037BB3]
+	(No symbol) [0x00007FF7E300B5AC]
+	(No symbol) [0x00007FF7E300AA8D]
+	(No symbol) [0x00007FF7E300B171]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E33C9DD4+1038052]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E31408BF+56655]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E3133063+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E33C8B5D+1033325]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B9731+327857]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B5BB4+312628]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31B5CE9+312937]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E31AC25C+273372]
+	BaseThreadInitThunk [0x00007FFE704B7374+20]
+	DummyExport [0x00007FFE4FDD17AA+58794]
+	RtlUserThreadStart [0x00007FFE724BCC91+33]
+</msg>
+</errors>
+</robot>
